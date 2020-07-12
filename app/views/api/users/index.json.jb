@@ -3,8 +3,9 @@
     id: user.id,
     name: user.name,
     username: user.username,
+    email: user.email,
     number_of_lists: user.lists.length,
-    name_of_lists: user.lists.map do |list|
+    list_names: user.lists.map do |list|
       {
         id: list.id,
         name: list.name,

@@ -1,0 +1,12 @@
+{
+  id: @user.id,
+  name: @user.name,
+  username: @user.username,
+  number_of_lists: @user.lists.length,
+  list_names: @user.lists.map do |list|
+    {
+      id: list.id,
+      list_name: list.name,
+    }
+  end,
+}
