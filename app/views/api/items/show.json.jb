@@ -1,0 +1,6 @@
+{
+  id: @item.id,
+  description: @item.description,
+  list_id: @item.list_id,
+  user_id: @item.user_id,
+}

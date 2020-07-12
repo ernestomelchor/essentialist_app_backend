@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 
     #Item routes and actions
     get "/items" => "items#index"
+    get "/items/:id" => "items#show"
+    post "/items" => "items#create"
 
     #Session route and action
     post "/sessions" => "sessions#create"
