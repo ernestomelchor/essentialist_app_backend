@@ -1,0 +1,11 @@
+{
+  id: @list.id,
+  name: @list.name,
+  user_id: @list.user_id,
+  items: @list.items.map do |item|
+    {
+      id: item.id,
+      description: item.description,
+    }
+  end,
+}

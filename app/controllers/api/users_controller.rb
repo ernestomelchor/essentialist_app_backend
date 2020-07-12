@@ -6,6 +6,11 @@ class Api::UsersController < ApplicationController
     render "index.json.jb"
   end
 
+  def show
+    @user = User.find_by(id: params[:id])
+    render "show.json.jb"
+  end
+
   def create
     user = User.new(
       name: params[:name],
@@ -19,11 +24,6 @@ class Api::UsersController < ApplicationController
     else
       render json: { errors: user.errors.full_messages }, status: :bad_request
     end
-  end
-
-  def show
-    @user = User.find_by(id: params[:id])
-    render "show.json.jb"
   end
 
   def update
