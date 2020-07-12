@@ -1,0 +1,9 @@
+@users.map do |user|
+  {
+    id: user.id,
+    name: user.name,
+    username: user.username,
+    lists_length: user.lists.length,
+    list_name: user.lists.name,
+  }
+end

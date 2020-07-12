@@ -5,3 +5,25 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+# 3 Users
+User.create!(name: "Ernesto", username: "ernestomelchor", email: "ernesto@example.com", password: "password")
+User.create!(name: "Linzi", username: "linzimelchor", email: "linzi@example.com", password: "password")
+User.create!(name: "Orlando", username: "orlandomelchor", email: "orlando@example.com", password: "password")
+
+# 3 Lists
+List.create!(name: "Groceries", user_id: 1)
+List.create!(name: "Activities", user_id: 2)
+List.create!(name: "Machine Learning", user_id: 3)
+
+#10 Items
+Item.create!(description: "rice", list_id: 1, user_id: 1)
+Item.create!(description: "beans", list_id: 1, user_id: 1)
+Item.create!(description: "puzzles", list_id: 2, user_id: 2)
+Item.create!(description: "blocks", list_id: 2, user_id: 2)
+Item.create!(description: "reading", list_id: 2, user_id: 2)
+Item.create!(description: "neural networks", list_id: 3, user_id: 3)
+Item.create!(description: "AI", list_id: 3, user_id: 3)
+Item.create!(description: "popcorn", list_id: 1, user_id: 1)
+Item.create!(description: "go for a walk", list_id: 2, user_id: 2)
+Item.create!(description: "coding video", list_id: 3, user_id: 3)
