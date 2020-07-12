@@ -3,7 +3,12 @@
     id: user.id,
     name: user.name,
     username: user.username,
-    lists_length: user.lists.length,
-    list_name: user.lists.name,
+    number_of_lists: user.lists.length,
+    name_of_lists: user.lists.map do |list|
+      {
+        id: list.id,
+        name: list.name,
+      }
+    end,
   }
 end

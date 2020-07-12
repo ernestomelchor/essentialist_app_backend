@@ -11,10 +11,11 @@ User.create!(name: "Ernesto", username: "ernestomelchor", email: "ernesto@exampl
 User.create!(name: "Linzi", username: "linzimelchor", email: "linzi@example.com", password: "password")
 User.create!(name: "Orlando", username: "orlandomelchor", email: "orlando@example.com", password: "password")
 
-# 3 Lists
+# 4 Lists
 List.create!(name: "Groceries", user_id: 1)
 List.create!(name: "Activities", user_id: 2)
 List.create!(name: "Machine Learning", user_id: 3)
+List.create!(name: "Daily Habits", user_id: 1)
 
 #10 Items
 Item.create!(description: "rice", list_id: 1, user_id: 1)
@@ -27,3 +28,7 @@ Item.create!(description: "AI", list_id: 3, user_id: 3)
 Item.create!(description: "popcorn", list_id: 1, user_id: 1)
 Item.create!(description: "go for a walk", list_id: 2, user_id: 2)
 Item.create!(description: "coding video", list_id: 3, user_id: 3)
+Item.create!(description: "code", list_id: 4, user_id: 1)
+Item.create!(description: "exercise", list_id: 4, user_id: 1)
+Item.create!(description: "eat", list_id: 4, user_id: 1)
+Item.create!(description: "sleep", list_id: 4, user_id: 1)
