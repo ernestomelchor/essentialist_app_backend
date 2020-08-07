@@ -7,9 +7,9 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 # 3 Users
-User.create!(name: "Ernesto", username: "ernestomelchor", email: "ernesto@example.com", password: "password")
-User.create!(name: "Linzi", username: "linzimelchor", email: "linzi@example.com", password: "password")
-User.create!(name: "Orlando", username: "orlandomelchor", email: "orlando@example.com", password: "password")
+User.create!(name: "Ernesto", username: "ernestomelchor", email: "ernesto@example.com", password: "adminUser88")
+User.create!(name: "Linzi", username: "linzimelchor", email: "linzi@example.com", password: "userUser")
+User.create!(name: "Orlando", username: "orlandomelchor", email: "orlando@example.com", password: "userUser")
 
 # 4 Lists
 List.create!(name: "Groceries", user_id: 1)
