@@ -23,4 +23,13 @@ class Api::ItemsController < ApplicationController
       render json: { errors: item.errors.full_messages }, status: :bad_request
     end
   end
+
+  def destroy
+    @item = current_user.items.find_by(id: params[:id])
+    if @item.destroy
+      render "destroy.json.jb"
+    else
+      render json: { errors: @item.errors.full_messages }, status: 422
+    end
+  end
 end
